@@ -1,0 +1,15 @@
+# Copyright (c) 2019  Amazon.com, Inc. or its affiliates.  All rights reserved.
+#
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+#
+
+service bootanim /system/bin/fireos_bootanimation ${persist.sys.boot.reason}
+    class core animation
+    user graphics
+    group graphics audio vendor_amazon_gid
+    disabled
+    oneshot
+    writepid /dev/stune/top-app/tasks
+
+on post-fs-data
+    mkdir /data/bootanim 0771 system vendor_amazon_gid

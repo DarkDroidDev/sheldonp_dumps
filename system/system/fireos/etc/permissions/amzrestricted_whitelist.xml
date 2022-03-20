@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2019 - 2021 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<fireos-permissions>
+    <amzrestricted-permissions package="com.amazon.device.bluetoothdfu" >
+        <permission name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.device.bluetoothdfu.diagnostics" >
+        <permission name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.device.bluetoothdfulib" >
+        <permission name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.kor.demo" >
+        <permission name="android.permission.CLEAR_APP_USER_DATA"/>
+        <permission name="android.permission.REMOVE_TASKS"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.ods.kindleconnect" >
+        <permission name="android.permission.INJECT_EVENTS"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.storm.lightning.services" >
+        <permission name="android.permission.DEVICE_POWER"/>
+        <permission name="android.permission.INJECT_EVENTS"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.storm.lightning.tutorial" >
+        <permission name="android.permission.DEVICE_POWER"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.tv.oobe" >
+        <permission name="android.permission.NETWORK_SETTINGS"/>
+        <permission name="android.permission.MANAGE_PROFILE_AND_DEVICE_OWNERS"/>
+        <permission name="android.permission.MANAGE_NETWORK_POLICY"/>
+        <permission name="com.amazon.permission.MODIFY_NETWORK_POWER_SETTINGS"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.tv.parentalcontrols" >
+        <permission name="android.permission.MANAGE_PROFILE_AND_DEVICE_OWNERS"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.tv.quicksettings" >
+        <permission name="android.permission.DEVICE_POWER"/>
+        <permission name="android.permission.INJECT_EVENTS"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.tv.settings.v2" >
+        <permission name="com.amazon.tv.settings.permission.BIND_CORE_SETTINGS"/>
+        <permission name="android.permission.NETWORK_SETTINGS"/>
+        <permission name="com.amazon.permission.MODIFY_NETWORK_POWER_SETTINGS"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.vizzini" >
+        <permission name="com.amazon.tv.launcher.permission.NAVIGATION"/>
+        <permission name="android.permission.DEVICE_POWER"/>
+        <permission name="android.permission.INJECT_EVENTS"/>
+        <permission name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.tv.livetv" >
+        <permission name="android.permission.ACCESS_SURFACE_FLINGER"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.avl.stark" >
+        <permission name="android.permission.INJECT_EVENTS"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.avl.ftv" >
+        <permission name="android.permission.INJECT_EVENTS"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.tv.lagunaservice" >
+        <permission name="android.permission.INJECT_EVENTS"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.tv.turnstile" >
+        <permission name="android.permission.INJECT_EVENTS"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.firetv.youtube" >
+        <permission name="com.amazon.appaccesskeyprovider.permission.ACCESS_KEY"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.logan" >
+        <permission name="android.permission.INJECT_EVENTS"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.spiderpork" >
+        <permission name="android.permission.INJECT_EVENTS"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.tv.launcher" >
+        <permission name="android.permission.INJECT_EVENTS"/>
+        <permission name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.tv.lagunasystem" >
+        <permission name="com.amazon.amazoninputmanager.permission.SET_PARTNER_APP_INFO" />
+    </amzrestricted-permissions>
+
+    <amzrestricted-permissions package="com.amazon.tv.ffsprovisioneeclient" >
+        <permission name="android.permission.NETWORK_SETTINGS"/>
+    </amzrestricted-permissions>
+
+</fireos-permissions>

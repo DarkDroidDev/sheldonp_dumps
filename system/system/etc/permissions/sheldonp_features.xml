@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2018 - 2020 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <!-- By declaring the feature here
+         The api PackageManager.hasSystemFeature(String feature) will
+         return true if passed the feature name below.-->
+    <feature name="amazon.hardware.color_depth_adjustment"/>
+    <feature name="amazon.hardware.adaptable_storage"/>
+    <feature name="amazon.hardware.external_storage"/>
+    <feature name="com.amazon.ffs.enabled"/>
+    <feature name="android.software.cant_save_state"/>
+    <feature name="com.amazon.instant_str"/>
+    <feature name="com.amazon.always_sdr.supported"/>
+    <feature name="com.amazon.feature.profile_picker"/>
+</permissions>

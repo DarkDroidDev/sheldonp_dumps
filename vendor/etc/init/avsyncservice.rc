@@ -1,0 +1,6 @@
+service vendor.avsyncservice /vendor/bin/avsyncservice
+    class main
+    user system
+    group graphics drmrpc readproc media system
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks

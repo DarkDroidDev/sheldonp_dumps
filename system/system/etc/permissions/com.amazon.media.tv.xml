@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library name="com.amazon.media.tv" file="/system/framework/com.amazon.media.tv.jar"/>
+</permissions>

@@ -1,0 +1,6 @@
+service vendor.hdcp-hal-1-0 /vendor/bin/hw/fireos.hardware.hdcp@1.0-service
+    class hal
+    user media
+    group audio media mediadrm drmrpc
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks

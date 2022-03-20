@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library name="com.amazon.tv.tvtweak" file="/system/framework/com.amazon.tv.tvtweak.jar"/>
+</permissions>

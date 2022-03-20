@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Feature to specify if the device supports DCS. -->
+<permissions>
+    <feature name="amazon.software.device_control" />
+</permissions>

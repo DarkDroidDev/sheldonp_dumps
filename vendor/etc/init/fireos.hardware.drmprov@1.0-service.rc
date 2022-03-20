@@ -1,0 +1,18 @@
+service drmprov-1.0 /vendor/bin/hw/fireos.hardware.drmprov@1.0-service
+    class hal
+    user system
+    group system
+
+service drmkey_backup /vendor/bin/amzn_drmprov_tool --backup
+    class hal
+    user root
+    group root drmrpc
+    oneshot
+    disabled
+
+on property:vendor.amzn_drm.backup.trigger=1
+    start drmkey_backup
+
+on property:vendor.amzn_drm.clear_cache.pr3=1
+    rm ${ro.amzn_drm.pr3_file}
+

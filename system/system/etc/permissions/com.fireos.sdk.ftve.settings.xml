@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library name="com.fireos.sdk.ftve.settings" file="/system/framework/com.fireos.sdk.ftve.settings.jar"/>
+</permissions>
