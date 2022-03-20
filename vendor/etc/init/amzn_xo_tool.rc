@@ -1,0 +1,7 @@
+on boot
+    start amzn_xo_tool
+
+service amzn_xo_tool /vendor/bin/amzn_xo_tool
+    disabled
+    oneshot
+    user system

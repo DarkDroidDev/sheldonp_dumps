@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2019 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<fosinit xmlns="http://www.amazon.com"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.amazon.com/fireos/base/core/config/ fosinit.xsd">
+    <vendor-services>
+        <service impl="com.amazon.android.service.hdmi.AmazonHdmiService" />
+    </vendor-services>
+    <vendor-callbacks>
+        <callback base="android.view.VendorDisplayCallback"
+            impl="com.amazon.android.service.hdmi.AmazonDisplayCallback" />
+        <callback base="com.android.server.hdmi.VendorHdmiCecCallback"
+            impl="com.android.server.hdmi.AmazonHdmiCecCallback"
+            classLoader="SYSTEMSERVER" />
+        <callback base="com.android.server.VendorWiredAccessoryManagerCallback"
+            impl="com.amazon.android.service.hdmi.AmazonHdmiWiredAccessoryManagerCallback"
+            classLoader="SYSTEMSERVER" />
+        <callback base="com.android.server.wm.VendorDisplayContentCallback"
+            impl="com.android.server.wm.AmazonDisplayContentCallback"
+            classLoader="SYSTEMSERVER" />
+        <callback base="com.android.server.policy.VendorPhoneWindowManagerCallback"
+            impl="com.amazon.android.service.hdmi.AmazonVendorPhoneWindowManagerCallback"
+            classLoader="SYSTEMSERVER" />
+        <callback base="com.android.server.hdmi.VendorHdmiControlServiceCallback"
+            impl="com.amazon.android.service.hdmi.AmazonHdmiServiceVendorCallback"
+            classLoader="SYSTEMSERVER" />
+    </vendor-callbacks>
+    <vendor-managers>
+        <manager name="AmazonHdmiService"
+            base="com.amazon.android.service.hdmi.AmazonHdmiServiceManager"
+            fetcher="STATIC" />
+    </vendor-managers>
+</fosinit>

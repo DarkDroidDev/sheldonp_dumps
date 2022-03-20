@@ -1,0 +1,3 @@
+<permissions>
+    <library name="com.amazon.connectivity_manager.api" file="/system/framework/connectivity_manager_api.jar" />
+</permissions>

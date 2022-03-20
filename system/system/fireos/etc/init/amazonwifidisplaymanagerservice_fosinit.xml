@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2019 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<fosinit xmlns="http://www.amazon.com"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.amazon.com/fireos/base/core/config/ fosinit.xsd">
+    <vendor-services>
+        <service impl="com.amazon.android.server.display.AmazonWifiDisplayManagerService" />
+        <service impl="com.amazon.android.server.display.AmazonWifiDisplayManagerService" />
+    </vendor-services>
+    <vendor-callbacks>
+        <callback base="com.android.server.display.VendorDisplayManagerServiceCallback"
+            impl="com.android.server.display.DisplayManagerVendorCallback"
+            classLoader="SYSTEMSERVER" />
+        <callback base="com.android.server.display.VendorWifiDisplayAdapterCallback"
+            impl="com.android.server.display.WifiDisplayAdapterVendorCallback"
+            classLoader="SYSTEMSERVER" />
+        <callback base="com.android.server.display.VendorWifiDisplayControllerCallback"
+            impl="com.android.server.display.WifiDisplayControllerVendorCallback"
+            classLoader="SYSTEMSERVER" />
+        <callback base="com.android.server.display.VendorDisplayManagerServiceCallback"
+            impl="com.android.server.display.DisplayManagerVendorCallback"
+            classLoader="SYSTEMSERVER" />
+        <callback base="com.android.server.display.VendorWifiDisplayAdapterCallback"
+            impl="com.android.server.display.WifiDisplayAdapterVendorCallback"
+            classLoader="SYSTEMSERVER" />
+        <callback base="com.android.server.display.VendorWifiDisplayControllerCallback"
+            impl="com.android.server.display.WifiDisplayControllerVendorCallback"
+            classLoader="SYSTEMSERVER" />
+    </vendor-callbacks>
+</fosinit>

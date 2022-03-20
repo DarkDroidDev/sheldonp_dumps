@@ -1,0 +1,4 @@
+libaudiostream_jni.AMAZON.so
+libwakewordserver_jni.AMAZON.so
+libopus_jni.AMAZON.so
+libpryon.AMAZON.so

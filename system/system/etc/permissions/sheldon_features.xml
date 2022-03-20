@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2018 - 2021 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <!-- By declaring the feature here
+         The API PackageManager.hasSystemFeature(String feature) will
+         return true if passed the feature name below.-->
+    <feature name="amazon.hardware.color_depth_adjustment"/>
+    <feature name="amazon.hardware.adaptable_storage"/>
+    <feature name="amazon.hardware.external_storage"/>
+    <feature name="android.software.cant_save_state"/>
+    <feature name="com.amazon.ffs.enabled"/>
+    <feature name="com.amazon.instant_str"/>
+    <feature name="com.amazon.always_sdr.supported"/>
+    <feature name="com.amazon.feature.profile_picker"/>
+
+    <!-- Features used in NetworkStatusAdvisor to characterize devices -->
+    <feature name="com.amazon.firetv.ship.with.hdmi.ext"/>
+    <!-- Feature to specify if the device should disable avrcp volume control -->
+    <feature name="com.amazon.feature.no_avrcp_vol_control"/>
+</permissions>

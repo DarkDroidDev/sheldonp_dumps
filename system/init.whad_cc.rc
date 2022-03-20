@@ -1,0 +1,18 @@
+# Whole Home Audio
+service whad_cc /system/bin/whad_cc
+    class main
+    user system
+    group system
+
+service quantum /system/bin/quantum
+    class main
+    user audioserver
+    group audio inet aipc dbus
+    disabled
+
+on property:amazon.wha.quantum=1
+    start quantum
+
+on property:amazon.wha.quantum=0
+    stop quantum
+

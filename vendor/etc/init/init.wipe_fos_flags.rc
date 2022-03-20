@@ -1,0 +1,17 @@
+service wipe_fos_flags /vendor/bin/wipe_fos_flags
+    class core
+    oneshot
+    disabled
+
+service backup_drmkey /vendor/bin/amzn_drmprov_tool --backup
+        class main
+        user root
+        group system drmrpc
+        oneshot
+        disabled
+
+
+on property:vendor.amazon.fos_flags.wipe=1
+    start backup_drmkey
+    start wipe_fos_flags
+    setprop persist.sys.usb.config mtp

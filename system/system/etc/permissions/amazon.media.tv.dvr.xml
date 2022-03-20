@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library name="amazon.media.tv.dvr" file="/system/framework/amazon.media.tv.dvr.jar"/>
+</permissions>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+<library name="com.fireos.sdk.wsf" file="/system/framework/com.amazon.tv.wsf.jar"/>
+<feature name="com.fireos.sdk.wsf" version="1"/>
+</permissions>

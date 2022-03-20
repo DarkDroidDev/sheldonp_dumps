@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This device supports Ceviche -->
+<permissions>
+    <feature name="com.amazon.ceviche" />
+</permissions>

@@ -1,0 +1,15 @@
+# sheldon-user 7.0 PS7249 2719 amz-p,release-keys
+- manufacturer: amazon
+- platform: mt8695
+- codename: sheldon
+- flavor: sheldon-user
+- release: 9
+- id: PS7249
+- incremental: 0021039325060
+- tags: amz-p,release-keys
+- fingerprint: Amazon/sheldon/sheldon:7.0/PS7249/2719N:user/amz-p,release-keys
+- fireos: 7.2.4.9 (PS7249/2719)
+- is_ab: false
+- brand: Amazon
+- branch: sheldon-user-7.0-PS7249-2719-amz-p,release-keys
+- repo: amazon_sheldon_dump
